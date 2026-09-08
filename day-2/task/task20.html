@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+
+
+    </head>
+
+    <body>
+        <!-- 20. Create inputs for Name, Age, and Course. Create one function that gets all three values and displays them using alert(). -->
+
+       <b> First Name :</b> <input type="text" id="Fname" placeholder=" enter name..">
+        <b> age :</b> <input type="text" id="age" placeholder=" enter last age..">
+        <b> course :</b> <input type="text" id="course" placeholder=" enter course..">
+       <button onclick="showDetails()">
+        click me
+        </button>
+
+        <script>
+
+             
+             var a = document.getElementById("Fname");
+             var b = document.getElementById("age");
+             var c = document.getElementById("course");
+
+            function showDetails(){
+
+                //  ??????????? mai chata hu  new line me out put...
+                alert(" Name :"+a.value +"Age :"  + b.value + " Course :"+ c.value  )
+            }
+        </script>
+
+    </body>
+</html>

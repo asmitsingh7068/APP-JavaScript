@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        
+        <!--  27. Create two input boxes. Get the value from the first box and set the same value into the second box -->
+<!-- // ???? -->
+
+        <b>First Box:</b> <input id="firstInput" type="text" placeholder="Enter your first input..">
+        
+        <button  onclick="task27()"> Change input</button>
+
+        <b>Second Box:</b> <input id="secondInput" type="text" placeholder="Enter your Second input..">
+
+        <script>
+
+           function task27(){
+            // get the data
+           var a = document.getElementById("firstInput").value;
+           // set value
+            document.getElementById("secondInput").value = a;
+
+           }
+
+
+        </script>
+    </body>
+</html>

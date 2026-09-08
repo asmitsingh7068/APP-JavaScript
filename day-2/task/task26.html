@@ -1,0 +1,38 @@
+
+<html>
+    <head>
+
+
+    </head>
+
+    <body>
+        <!-- 26. Create three inputs: Name, Course, and City. On button click, set predefined values into all three inputs using .value-->
+
+       <b> Name :</b> <input type="text" id="name" placeholder=" enter name..">
+      
+        <b> course :</b> <input type="text" id="course" placeholder=" enter course..">
+
+        <b> city :</b> <input type="text" id="city" placeholder=" enter city..">
+
+
+       <button onclick="showDetails()">
+        click me
+        </button>
+
+        <script>
+
+             
+             var a = document.getElementById("name");
+            
+             var b = document.getElementById("course");
+              var c = document.getElementById("city");
+
+            function showDetails(){
+
+                //  ??????????? mai chata hu  new line me out put...
+                alert(" Name :"+a.value +"Course :"  + b.value + " City :"+ c.value  )
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+    <body>
+
+        <!-- 7. Create two input boxes. Copy the mobile number from the first box to the second box using .value. -->
+
+        <b>First Mobile Number:</b>
+        <input id="firstInput" type="text" placeholder="Enter your mobile number..">
+
+        <b>Second Mobile Number:</b>
+        <input id="secondInput" type="text" placeholder="Your mobile number..">
+
+        <button onclick="task7()">Copy Number</button>
+
+        <script>
+
+            function task7() {
+                // get the mobile number
+            var a = document.getElementById("firstInput").value;
+
+            // set value
+            document.getElementById("secondInput").value = a;
+                alert("Copy Number: " + document.getElementById("secondInput").value);
+            }
+
+        </script>
+
+    </body>
+</html>

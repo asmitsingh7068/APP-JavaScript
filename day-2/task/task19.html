@@ -1,0 +1,29 @@
+
+
+<html>
+    <head>
+
+
+    </head>
+
+    <body>
+        <!-- 19. Create two inputs: First Name and Last Name. Create a function that gets both values and displays them together using alert(). -->
+
+       <b> First Name :</b> <input type="text" id="Fname" placeholder=" enter name..">
+        <b> Last Name :</b> <input type="text" id="Lname" placeholder=" enter last name..">
+       <button onclick="showName()">
+        click me
+        </button>
+
+        <script>
+
+             
+             var a = document.getElementById("Fname");
+             var b = document.getElementById("Lname");
+            function showName(){
+                alert("first Name :"+a.value + " Second Name :"+ b.value )
+            }
+        </script>
+
+    </body>
+</html>

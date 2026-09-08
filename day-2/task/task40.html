@@ -1,0 +1,52 @@
+<html>
+
+<head>
+
+
+</head>
+<body>
+    
+    <!-- 40. Create a Student Form with inputs for Student Name, Father's Name, Mobile, Course, and City. Create a Show Details button. On click, use one function without parameters and without return to get all values using getElementById().value and display them using alert(). Then create separate buttons to change the form's background color, font size, width, border, and padding. -->
+
+
+    <form action="" id="f" style="border: 2px solid black;" >
+         <b>Student name: </b> <input id="name" type="text" placeholder=" enter name ">
+     <b>Father name: </b> <input id="fname" type="text" placeholder=" enter name ">
+     <b>Mobile Number : </b> <input id="number" type="text" placeholder=" enter number ">
+     <b>Course: </b> <input id="courese" type="text" placeholder=" enter courese ">
+     <b>City : </b> <input id="city" type="text" placeholder=" enter city "> <br><br>+
+     
+    </form>
+
+    <button onclick="bgc()">change bg-color</button> <br><br>
+     <button onclick="fs()">change fs</button> <br> <br>
+     <button onclick="width()">width</button> <br> <br>
+     <button onclick="border()">border</button> <br> <br>
+     <button onclick="padding()">padding</button> <br> <br>
+
+   <script>
+      function bgc(){
+        document.getElementById("f").style.backgroundColor="red";
+        
+     }
+      function fs(){
+        document.getElementById("f").style.fontSize="30px";
+        
+     }
+      function width(){
+        document.getElementById("f").style.width="100px";
+        
+     }
+      function border(){
+        document.getElementById("f").style.border="10px";
+        
+     }
+      function padding(){
+        document.getElementById("f").style.padding="10px";
+        
+     }
+   </script>
+
+
+</body>
+</html>
