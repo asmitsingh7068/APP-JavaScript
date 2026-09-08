@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="bootstrap.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row bg-primary p-5">
+
+            <div class="col-md-10 mx-auto bg-white shadow-lg rounded">
+
+                <u class="fs-2">
+                    <h1>Registration</h1>
+                </u>
+
+                <p>Personal Details</p>
+
+                <div class="row">
+
+                    <!-- First Column -->
+                    <div class="col-md-4">
+
+                        <p><b>Full Name</b></p>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Enter your name"
+                               id="name">
+
+                        <p class="name"></p>
+
+
+                        <p class="mt-2">
+                            <b>Mobile Number</b>
+                        </p>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Enter your number"
+                               id="number">
+
+                        <p class="num"></p>
+
+
+                        <p class="mt-2" style="color: rgb(99, 98, 98);">
+                            Identity Details
+                        </p>
+
+
+                        <p><b>ID type</b></p>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Enter ID type"
+                               id="id">
+
+                        <p class="id"></p>
+
+
+                        <p class="mt-2">
+                            <b>Issue Date</b>
+                        </p>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Enter ID issue date"
+                               id="date">
+
+                        <p class="date"></p>
+
+                    </div>
+
+
+                    <!-- Second Column -->
+                    <div class="col-md-4">
+
+                        <p>
+                            <b>Date of Birth</b>
+                        </p>
+
+                        <input type="date"
+                               class="form-control"
+                               placeholder="Enter your dob"
+                               id="dob">
+
+                        <p class="dob"></p>
+
+
+                        <p class="mt-2">
+                            <b>Gender</b>
+                        </p>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Enter your gender"
+                               id="gender">
+
+                        <p class="gen"></p>
+
+
+                        <p class="mt-4">
+                            <b>ID Number</b>
+                        </p>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Enter ID number"
+                               id="idn">
+
+                        <p class="numb"></p>
+
+
+                        <p class="mt-2">
+                            <b>Issue State</b>
+                        </p>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Enter ID issue State"
+                               id="state">
+
+                        <p class="state"></p>
+
+                    </div>
+
+
+                    <!-- Third Column -->
+                    <div class="col-md-4">
+
+                        <p>
+                            <b>Email</b>
+                        </p>
+
+                        <input type="email"
+                               class="form-control"
+                               placeholder="Enter your email"
+                               id="email">
+
+                        <p class="email"></p>
+
+
+                        <p class="mt-2">
+                            <b>Occupation</b>
+                        </p>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Enter your occupation"
+                               id="occ">
+
+                        <p class="occ"></p>
+
+
+                        <p class="mt-4">
+                            <strong>Issue Authority</strong>
+                        </p>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Enter issue department"
+                               id="auth">
+
+                        <p class="dep"></p>
+
+
+                        <p class="mt-2">
+                            <b>Expire Date</b>
+                        </p>
+
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Enter ID expiry date"
+                               id="edate">
+
+                       
+                        <p class="edate"></p>
+
+                    </div>
+
+
+                    <button onclick="print()"
+                            class="btn btn-primary w-25 my-3 ms-3">
+                        Next
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function print() {
+
+            document.querySelector(".name").innerText =
+                document.querySelector("#name").value;
+
+            document.querySelector(".name").style.color = "teal";
+
+
+            document.querySelector(".num").innerText =
+                document.querySelector("#number").value;
+
+            document.querySelector(".num").style.color = "teal";
+
+
+            document.querySelector(".id").innerText =
+                document.querySelector("#id").value;
+
+            document.querySelector(".id").style.color = "teal";
+
+
+            // Issue Date
+            document.querySelector(".date").innerText =
+                document.querySelector("#date").value;
+
+            document.querySelector(".date").style.color = "teal";
+
+
+            document.querySelector(".dob").innerText =
+                document.querySelector("#dob").value;
+
+            document.querySelector(".dob").style.color = "teal";
+
+
+            document.querySelector(".gen").innerText =
+                document.querySelector("#gender").value;
+
+            document.querySelector(".gen").style.color = "teal";
+
+
+            document.querySelector(".numb").innerText =
+                document.querySelector("#idn").value;
+
+            document.querySelector(".numb").style.color = "teal";
+
+
+            document.querySelector(".state").innerText =
+                document.querySelector("#state").value;
+
+            document.querySelector(".state").style.color = "teal";
+
+
+            document.querySelector(".email").innerText =
+                document.querySelector("#email").value;
+
+            document.querySelector(".email").style.color = "teal";
+
+
+            document.querySelector(".occ").innerText =
+                document.querySelector("#occ").value;
+
+            document.querySelector(".occ").style.color = "teal";
+
+
+            document.querySelector(".dep").innerText =
+                document.querySelector("#auth").value;
+
+            document.querySelector(".dep").style.color = "teal";
+
+
+           
+            document.querySelector(".edate").innerText =
+                document.querySelector("#edate").value;
+
+            document.querySelector(".edate").style.color = "teal";
+
+        }
+
+    </script>
+
+
+    <script src="bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

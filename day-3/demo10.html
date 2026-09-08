@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+
+    </head>
+
+    <body>
+        
+        <select id="ddl" onchange=demo()>
+
+            <option >--Select--</option>
+            <option >mern</option>
+            <option >mern full satck</option>
+            <option >java full stack</option>
+        </select>
+        <p id="p"> </p>
+
+        <button onclick="demo()" >
+            Get data
+        </button>
+
+        <script>
+            function  demo(){
+                    var ddl = document.getElementById("ddl")
+                    document.write("Selected value is:"+ ddl.value )
+
+                    document.getElementById("p").innerHTML=`<b> Selected value is</b> : ${ddl.value}`
+
+            }
+        </script>
+    </body>
+</html>

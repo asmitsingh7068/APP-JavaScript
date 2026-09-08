@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+    <style>
+        h1{
+            border: 2px solid plum;
+            color: purple;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="x">Tech technology </h1>
+    <h1 id="y">indian technology </h1>
+
+    <button onclick="demo()">Click me</button>
+
+    <script>
+        function  demo(){
+            var a = document.getElementById("x")
+            var b = document.getElementById("y")
+            
+
+            var text1 = a.innerText;
+            var text2 = b.innerText;
+
+            a.innerText=text2;
+            b.innerText= text1;
+
+            
+        }
+    </script>
+</body>
+</html>

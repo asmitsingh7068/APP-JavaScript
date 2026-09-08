@@ -1,0 +1,96 @@
+<html>
+
+<head>
+
+    <style>
+
+        #container {
+            height: 300px;
+            width: 400px;
+            margin-left: 100px;
+        }
+
+        .a {
+            height: 20px;
+            width: 100px;
+            margin-top: 10px;
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h3>Send Message</h3>
+
+        <form class="a">
+
+            <b>Name</b>
+            <input type="text" id="name">
+            <br>
+
+            <b>Name Print</b>
+            <input type="text" id="np">
+            <br>
+
+            <b>Email</b>
+            <input type="text" id="email">
+            <br>
+
+            <b>Email print</b>
+            <input type="text" id="pemail">
+            <br>
+
+            <b>Mobile</b>
+            <input type="text" id="mobile">
+            <br>
+
+            <b>Mobile print</b>
+            <input type="text" id="pmobile">
+            <br>
+
+            <b>Message</b>
+            <input type="text" id="mess">
+            <br>
+
+            <b>Message print</b>
+            <input type="text" id="pmess">
+
+            <button type="button" onclick="Myfun()">Click me</button>
+
+        </form>
+
+    </div>
+
+
+    <script>
+
+        var name = document.getElementById("name");
+        var email = document.getElementById("email");
+        var mobile = document.getElementById("mobile");
+        var mess = document.getElementById("mess");
+
+
+        function Myfun() {
+
+            alert("All Set");
+
+            document.getElementById("np").value = name.value;
+
+            document.getElementById("pemail").value = email.value;
+
+            document.getElementById("pmobile").value = mobile.value;
+
+            document.getElementById("pmess").value = mess.value;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

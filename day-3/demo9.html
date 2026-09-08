@@ -1,0 +1,72 @@
+
+<html>
+
+<head>
+
+
+        <style>
+
+            input{
+
+                height: 45px;
+                background-color: aqua;
+                border: none;
+                width: 200px;
+                border-radius: 5px;
+                font-size:30px ;
+            }
+            button{
+                background-color: black;
+                color: whitesmoke;
+                border: none;
+                height: 45px;
+                width: 45px;
+                text-align: center;
+                line-height: 45px;
+                font-size: 30px;
+                border-radius: 5px;
+            }
+            
+        </style>
+</head>
+
+<body>
+            <input type="text" id="t1"> <br><br> 
+            <input type="text" id="t2"> <br><br> 
+            <input type="text" id="result"> <br><br> 
+            <button onclick="demo1()">+</button>
+            <button onclick="demo2()">-</button>
+            <button onclick="demo3()">*</button>
+            <button onclick="demo4()">/</button>
+
+            <script>
+            var t1 =  document.getElementById("t1")
+            var t2 =  document.getElementById("t2")
+            var res = document.getElementById("result")
+                function demo1(){
+
+                    var r = parseFloat(t1.value) + parseFloat(t2.value)
+                    res.value=r;
+                }
+
+                   function demo2(){
+
+                    var m = parseFloat(t1.value) - parseFloat(t2.value)
+                    res.value=m;
+                }
+
+                   function demo3(){
+
+                    var mm = parseFloat(t1.value) * parseFloat(t2.value)
+                    res.value=mm;
+                }
+
+                   function demo4(){
+
+                    var d= parseFloat(t1.value) / parseFloat(t2.value)
+                    res.value=d.toFixed(3);
+                }
+            </script>
+
+</body>
+</html>

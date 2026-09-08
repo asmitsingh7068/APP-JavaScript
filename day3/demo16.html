@@ -1,0 +1,124 @@
+<html>
+
+<head>
+
+    <style>
+
+        #container {
+            height: 600px;
+            width: 400px;
+            margin-left: 100px;
+               border: 2px solid black;
+               box-shadow: 10px 10px 10px red;
+          
+        }
+       
+        .a {
+            height: 20px;
+            width: 100px;
+            margin-top: 10px;
+            margin-left: 100px;
+        }
+
+        h3{
+        color: teal;
+        }
+        .btn{
+            margin-top: 30px ;
+             width: 200px;
+             height: 30px;
+             text-align: center;
+             color: black;
+             border-radius:10px;
+             background: teal;
+        }
+
+      
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h3 style="text-align: center;">Send Message</h3> <hr style="width: 100px; border: 1px solid red;">
+
+        <form class="a">
+
+            <b>Name</b>
+            <input type="text" id="name">
+            <br>
+
+            <b>Name Print</b>
+            <input type="text" id="np">
+            <br>
+
+            <b>Email</b>
+            <input type="text" id="email">
+            <br>
+
+            <b>Email print</b>
+            <input type="text" id="pemail">
+            <br>
+
+            <b>Mobile</b>
+            <input type="text" id="mobile">
+            <br>
+
+            <b>Mobile print</b>
+            <input type="text" id="pmobile">
+            <br>
+
+            <b>Message</b>
+            <input type="text" id="mess">
+            <br>
+
+            <b>Message print</b>
+            <input type="text" id="pmess">
+
+            <b>Gender</b>
+            <input type="text" id="gen">
+            <br>
+
+            <b>Gender print</b>
+            <input type="text" id="gprint">
+
+            <button class="btn" type="button" onclick="Myfun()">Click me</button>
+
+        </form>
+
+    </div>
+
+
+    <script>
+
+        var nam = document.getElementById("name");
+        var email = document.getElementById("email");
+        var mobile = document.getElementById("mobile");
+        var mess = document.getElementById("mess");
+        var gen = document.getElementById("gen");
+
+
+        function Myfun() {
+
+            alert("All Set");
+
+            document.getElementById("np").value = nam.value;
+
+            document.getElementById("pemail").value = email.value;
+
+            document.getElementById("pmobile").value = mobile.value;
+
+            document.getElementById("pmess").value = mess.value;
+            document.getElementById("gprint").value = gen.value;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
