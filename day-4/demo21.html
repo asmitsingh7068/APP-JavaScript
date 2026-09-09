@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <style>
+
+        input{
+
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            background: red;
+            box-shadow: 0px 0px 20px black;
+        }
+       </style>
+    
+</head>
+<body>
+    <center>
+        <img src="/images/bulb.jpg"  height="200px" alt=""> <br>
+        <input type="button" onclick="demo()" value="ON"></input>
+    </center>
+
+
+<script>
+
+        function demo(){
+
+            var img = document.querySelector("img")
+            var btn = document.querySelector("input")
+            if(btn.value=="ON"){
+                btn.value="OFF"
+                img.src="/images/bulbon.jpg"
+                btn.style.background="green"
+
+            }
+            else{
+                btn.value="ON"
+                 img.src="/images/bulb.jpg"
+                 btn.style.background="red"
+            }
+        }
+
+</script>  
+    
+</body>
+</html>

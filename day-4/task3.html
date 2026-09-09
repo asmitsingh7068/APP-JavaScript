@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="col-sm-6 mx-auto shadow-lg p-5 ">
+
+            <strong>Select inputs:</strong>
+            <select id="se" onchange="demo()" class="form-control">
+
+                  <option value=" ">--select--</option>
+                <option value="te">text</option>
+                <option value="ra">radio</option>
+                <option value="ch">checkbox</option>
+                <option value="co">color</option>
+                <option value="d">date</option>
+                <option value="ti">time</option>
+                <option value="fi">file</option>
+                <option value="da">datetime-local</option>
+            </select>
+
+            <strong>this is output:</strong>
+            <input type="text" class="form-control">
+
+        </div>
+    </div>
+
+    <script>
+        var demo=() => {
+
+            var a= document.querySelector("select")
+            var b= document.querySelector("input")
+
+            if(a.value=="te"){
+                b.type="text"
+                 
+            }
+            
+            if(a.value=="ra"){
+                b.type="radio"
+                 
+            }
+            
+            if(a.value=="ch"){
+                b.type="checkbox"
+                 
+            }
+            
+            if(a.value=="co"){
+                b.type="color"
+                 
+            }
+            
+            if(a.value=="d"){
+                b.type="date"
+                 
+            }
+            
+            if(a.value=="ti"){
+                b.type="time"
+                 
+            }
+            
+            if(a.value=="fi"){
+                b.type="file"
+                 
+            }
+            
+            if(a.value=="da"){
+                b.type="datetime-local"
+                 
+            }
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

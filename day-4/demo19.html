@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+    <b></b>
+
+    <input type="number" class="form-control w-50">
+<br>
+    <button onclick="demo()" class="btn btn-dark">
+        Validation
+    </button>
+    <script>
+
+        function demo(){
+
+            var t =document.querySelector("input"); //123456
+            var b =document.querySelector("b"); 
+
+                // var len = t.value.length//6
+
+                var len = document.querySelector("input").value
+                if(len==6){
+
+                    b.innerText="valid Pincode";
+                    b.style.color="green";
+                    t.style.border="5px solid green"
+                }
+                else{
+                     b.innerText="Invalid Pincode";
+                    b.style.color="red";
+                    t.style.border="5px solid red"
+                }
+
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+
+    <!-- <input type="text"> -->
+
+    <img onmouseover="myfun()" onmouseleave="demo()" src="/vvv.png" alt="" height="300px">  <br>
+
+    <button>click</button>
+
+    <script>
+        /*
+        function demo(){
+            var x = document.querySelector("input")
+            x.type="date"
+        }
+            */
+
+                var img = document.querySelector("img")
+            function myfun(){
+
+                
+                // alert("SRC :"+ img.src)
+                // alert("SRC :"+ img.height)
+
+                img.src="/images/natural6.jpg"
+
+            }
+
+            function demo(){
+                img.src= "/vvv.png"
+            }
+    </script>
+    
+</body>
+</html>

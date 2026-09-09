@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+<div class="container"></div>
+<div class="row">
+    <div class="col-sm-7 mx-auto" >
+        <div class="input-group">
+            <input type="text" id="t1" class="form-control"  placeholder="enter your password">
+            <span class="input-group-text bg-dark">
+                <input type="button" id="btn" onclick="demo()" value="HIDE" class="btn btn-dark">
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+
+    function demo(){
+
+        var t = document.querySelector("#t1");
+        var btn=  document.querySelector("#btn");
+        if(btn.value=="HIDE"){
+
+            btn.value="SHOW"
+            t.type="password"
+
+        }
+        else{
+
+            btn.value="HIDE"
+            t.type="text"
+        }
+    }
+</script>
+    
+</body>
+</html>
