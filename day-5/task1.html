@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-12 ">
+
+            <!-- ================= TASK 1 ================= -->
+
+            <h4>Task 1</h4>
+
+            <input id="input1" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Enter input">
+
+            <button onclick="t1()" class="btn btn-danger my-3">
+                Greet
+            </button>
+
+            <script>
+                function t1() {
+                    var a = document.getElementById("input1");
+
+                    alert("Welcome to Techpile: " + a.value);
+                }
+            </script>
+
+
+            <hr>
+
+
+            <!-- ================= TASK 2 ================= -->
+
+            <h4>Task 2</h4>
+
+            <input id="name2" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Enter Name">
+            <br>
+
+            <input id="city2" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Enter City">
+
+            <button onclick="t2()" class="btn btn-danger my-3">
+                Click me
+            </button>
+
+            <script>
+                function t2() {
+
+                    var a = document.getElementById("name2");
+                    var b = document.getElementById("city2");
+
+                    alert("Welcome Name: " + a.value +
+                          "   City: " + b.value);
+                }
+            </script>
+
+
+            <hr>
+
+
+            <!-- ================= TASK 3 ================= -->
+
+            <h4>Task 3</h4>
+
+            <input id="name3" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Enter Name">
+            <br>
+
+            <input id="course3" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Enter Course">
+            <br>
+
+            <input id="batch3" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Enter Batch">
+
+            <button onclick="t3()" class="btn btn-danger my-3">
+                Click me
+            </button>
+
+            <p><b>Introduction here..</b></p>
+
+            <input id="intro3" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Output">
+
+            <script>
+                function t3() {
+
+                    var a = document.getElementById("name3");
+                    var b = document.getElementById("course3");
+                    var c = document.getElementById("batch3");
+
+                    document.getElementById("intro3").value =
+                        "Name: " + a.value +
+                        "  Course: " + b.value +
+                        "  Batch: " + c.value;
+                }
+            </script>
+
+
+            <hr>
+
+
+            <!-- ================= TASK 4 ================= -->
+
+            <h4>Task 4</h4>
+
+            <input id="notice4" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Enter Notice">
+
+            <button onclick="t4()" class="btn btn-danger my-3">
+                Click me
+            </button>
+
+            <p><b>Notice area..</b></p>
+
+            <input id="output4" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Output">
+
+            <script>
+                function t4() {
+
+                    var a = document.getElementById("notice4");
+
+                    document.getElementById("output4").value =
+                        "Notice is: " + a.value;
+                }
+            </script>
+
+
+            <hr>
+
+
+            <!-- ================= TASK 5 ================= -->
+
+            <h4>Task 5</h4>
+
+            <input id="name5" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Enter Name">
+
+            <button onclick="t5()" class="btn btn-danger my-3">
+                Click me
+            </button>
+
+            <p><b>Message Area..</b></p>
+
+            <input id="message5" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Output">
+
+            <script>
+                function t5() {
+
+                    var a = document.getElementById("name5");
+
+                    document.getElementById("message5").value =
+                        "Good Morning: " + a.value;
+                }
+            </script>
+
+
+            <hr>
+
+
+            <!-- ================= TASK 6 ================= -->
+
+            <h4>Task 6</h4>
+
+            <input id="name6" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Enter Name">
+            <br>
+
+            <input id="number6" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Mobile Number">
+            <br>
+
+            <input id="city6" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Enter City">
+
+            <button onclick="t6()" class="btn btn-danger my-3">
+                Click me
+            </button>
+
+            <p><b>Details Card..</b></p>
+
+            <input id="output6" type="text"
+                   class="form-control w-50 border-4"
+                   placeholder="Output">
+
+            <script>
+                function t6() {
+
+                    var a = document.getElementById("name6");
+                    var b = document.getElementById("number6");
+                    var c = document.getElementById("city6");
+
+                    document.getElementById("output6").value =
+                        "Name: " + a.value +
+                        "  Number: " + b.value +
+                        "  City: " + c.value;
+                }
+            </script>
+            <hr>
+            <!-- ================= TASK 6 ================= -->
+
+            <h4>Task 7</h4>
+
+            <input id="n7" type="text" class="form-control w-50 border-4"  placeholder="Name"> <br>
+            <input id="c7" type="text" class="form-control w-50 border-4"  placeholder="Courses"> <br>
+            <input id="b7" type="text" class="form-control w-50 border-4"  placeholder="Batch"> <br>
+              <button onclick="t7()" class="btn btn-danger my-3">
+            Set Dummy Details
+            </button>
+
+            <script>
+                function t7(){
+
+                    var a = document.getElementById("n7");
+                    var b = document.getElementById("c7");
+                    var c = document.getElementById("b7");
+
+                    document.getElementById("n7").value = " Asmit "  
+                    document.getElementById("c7").value = "Java "  
+                    document.getElementById("b7").value = "java full stack " 
+                }
+            </script>
+<hr>
+
+  <h4>Task 8</h4>
+
+            <input id="n8" type="text" class="form-control w-50 border-4"  placeholder=" Enter Name"> <br>
+
+            <input id="b8" type="text" class="form-control w-50 border-4"  placeholder="Auto filled name"> <br>
+              <button onclick="t8()" class="btn btn-danger my-3">
+           set details
+            </button>
+
+            <script>
+                function t8(){
+
+                    var a = document.getElementById("n8");
+                   
+                    var c = document.getElementById("b8");
+                    document.getElementById("b8").value = document.getElementById("n8").value 
+                }
+            </script>
+<hr>
+
+<h4>Task 9 not Complete</h4>
+
+            <input id="nu1" type="number" class="form-control w-50 border-4"  placeholder=" Enter first number"> <br>
+            <input id="nu2" type="number" class="form-control w-50 border-4"  placeholder=" Enter second number"> <br>
+
+            <input id="b8" type="text" readonly class="form-control w-50 border-4"  placeholder="Output"> <br>
+              <button onclick="t9()" class="btn btn-danger my-3">
+           Calculate
+            </button>
+
+            <script>
+                function t9(){
+
+                    var a = document.getElementById("nu1");
+                    var b = document.getElementById("nu2"); 
+                    document.getElementById("b8").value = parseFloat(a.value) * parseInt(b.value) 
+                }
+            </script>
+<hr>
+
+<h4>Task 10</h4>
+
+            <input id="ea" type="number" class="form-control w-50 border-4"  placeholder=" Enter your age"> <br>
+            <input id="opa" type="number" readonly class="form-control w-50 border-4"  placeholder=" your age will be...next year"> <br>
+
+ <br>
+              <button onclick="t10()" class="btn btn-danger my-3">
+           Calculate
+            </button>
+
+            <script>
+                
+                function t10(){
+
+                    var a = document.getElementById("ea");
+                    var b = document.getElementById("opa"); 
+                    document.getElementById("opa").value =  parseInt(a.value) + 1;
+                }
+            </script>
+
+            <hr>
+
+
+           <h4>Task 11</h4>
+
+            <input id="height" type="number" class="form-control w-50 border-4"  placeholder=" Enter height of rect"> <br>
+            <input id="width" type="number" class="form-control w-50 border-4"  placeholder=" Enter width of rect"> <br>
+            <input id="op11" type="number" readonly class="form-control w-50 border-4"  placeholder=" Area is"> <br>
+
+ <br>
+              <button onclick="t11()" class="btn btn-danger my-3">
+           Calculate the area 
+            </button>
+
+            <script>
+
+
+                function t11(){
+
+                    var h = document.getElementById("height");
+                    var b = document.getElementById("width"); 
+                    document.getElementById("op11").value =  parseFloat(h.value) * parseFloat(b.value);
+                }
+            </script>
+
+            <hr>
+
+            <h4>Task 12</h4>
+
+            <input id="income" type="number" class="form-control w-50 border-4"  placeholder=" Enter encome"> <br>
+            <input id="bonus" type="number" class="form-control w-50 border-4"  placeholder=" Enter bonus"> <br>
+            <input id="op12" type="number" readonly class="form-control w-50 border-4"  placeholder=" final salery is"> <br>
+ <br>
+              <button onclick="t12()" class="btn btn-danger my-3">
+           Calculate the Salery 
+            </button>
+
+            <script>
+                function t12(){
+
+                    var i = document.getElementById("income");
+                    var b = document.getElementById("bonus"); 
+                    document.getElementById("op12").value =  parseFloat(i.value) + parseFloat(b.value);
+                }
+            </script>
+<hr>
+
+
+            <h4>Task 13</h4>
+
+            <input id="fsn" type="number" class="form-control w-50 border-4"  placeholder=" Enter float number"> <br>
+            <input id="con" type="number" readonly class="form-control w-50 border-4"  placeholder=" Convert number"> <br>
+            
+ <br>
+              <button onclick="t13()" class="btn btn-danger my-3">
+           Convert in int
+            </button>
+
+            <script>
+                function t13(){
+
+                    var t13 = document.getElementById("fsn");
+                  
+                    document.getElementById("con").value =  parseInt(t13.value) 
+                }
+            </script>
+
+            <h4>Task 14</h4>
+
+            <input id="fm" type="number" class="form-control w-50 border-4"  placeholder=" Enter float mrp"> <br>
+            <input id="fmc" type="number" readonly class="form-control w-50 border-4"  placeholder=" Convert number"> <br>
+            
+ <br>
+              <button onclick="t14()" class="btn btn-danger my-3">
+           Convert in Float
+            </button>
+
+            <script>
+                function t14(){
+
+                    var floatNumber = document.getElementById("fm");
+                   
+                  
+                    document.getElementById("fmc").value =  parseFloat(floatNumber.value) 
+                }
+            </script>
+
+            <hr>
+            <h4>Task 16</h4>
+
+            <input id="agd" type="number" class="form-control w-50 border-4"  placeholder=" Enter age in decimal"> <br>
+            <input id="agdc" type="number" readonly class="form-control w-50 border-4"  placeholder=" Convert  Age in decimal"> <br>
+            
+ <br>
+              <button onclick="t16()" class="btn btn-danger my-3">
+           Convert in INt
+            </button>
+
+            <script>
+                function t16(){
+
+                    var intAge = document.getElementById("agd");
+                   
+                  
+                    document.getElementById("agdc").value =  parseInt(intAge.value) 
+                }
+            </script>
+
+            <h4>Task 17</h4>
+
+            <input id="agd" type="number" class="form-control w-50 border-4"  placeholder=" Enter age in decimal"> <br>
+            <input id="agdc" type="number" readonly class="form-control w-50 border-4"  placeholder=" Convert  Age in decimal"> <br>
+            
+ <br>
+              <button onclick="t16()" class="btn btn-danger my-3">
+           Convert in INt
+            </button>
+
+            <script>
+                function t16(){
+
+                    var intAge = document.getElementById("agd");
+                   
+                  
+                    document.getElementById("agdc").value =  parseInt(intAge.value) 
+                }
+            </script>
+
+            <hr>
+
+            <h4>Task 18</h4>
+
+            <input id="td" type="number" class="form-control w-50 border-4"  placeholder=" Enter total distance"> <br>
+            <input id="kmc" type="number" class="form-control w-50 border-4"  placeholder=" per km cost"> <br>
+            <input id="cta" type="number" readonly class="form-control w-50 border-4"  placeholder=" Claculate total ammount"> <br>
+            
+ <br>
+              <button onclick="t18()" class="btn btn-danger my-3">
+          Calculate total ammount
+            </button>
+
+            <script>
+                function t18(){
+
+                    var total_distance = document.getElementById("td");
+                    var total_ammount = document.getElementById("kmc");
+                    
+                   
+                  
+                    document.getElementById("cta").value =  parseFloat(total_distance.value) * parseFloat(total_ammount.value) 
+                }
+            </script>
+
+
+
+            <h4>Task 19 </h4>
+            <input id="eyn" type="text" class="form-control w-50 border-4"  placeholder="Enter Your Number"> <br>
+            <input id="cyr" type="text" readonly class="form-control w-50 border-4"  placeholder=" Check your result"> <br>
+            
+ <br>
+              <button onclick="t19()" class="btn btn-danger my-3">
+     Check Result
+            </button>
+
+            <script>
+                function t19(){
+                   var x = document.getElementById("eyn").value
+                    var y = document.getElementById("cyr")
+
+                    if(x > 40 ){
+                        y.value = " You are Pass.."
+                    }
+                    else{
+                    y.value =" You are fail.."
+
+                    }
+         
+                }
+            </script>
+
+
+ <h4>Task 20 </h4>
+            <input id="eya" type="number" class="form-control w-50 border-4"  placeholder="Enter Your Age"> <br>
+            <!-- <input id="cyrr" class="form-control w-50 border-4"  placeholder=" Check your result"> <br> -->
+            
+ <br>
+              <button onclick="t20()" class="btn btn-danger my-3">
+     Check  number
+            </button>
+
+            <script>
+                function t20(){
+
+                    var yy = document.getElementById("eya").value
+                    if(yy> 18){
+                        alert ( " entry pass")
+                    }
+                    else{
+                        alert ( " entry fail")
+                    }
+                    
+                         
+                }
+            </script>
+
+
+<hr>
+
+<h4>Task 21 </h4>
+            <input id="etn" type="number" class="form-control w-50 border-4"  placeholder="Enter Ticket Number"> <br>
+            <!-- <input id="cyrr" class="form-control w-50 border-4"  placeholder=" Check your result"> <br> -->
+            
+ <br>
+              <button onclick="t21()" class="btn btn-danger my-3">
+     Check Number
+            </button>
+
+            <script>
+                function t21(){
+
+                    var yy = document.getElementById("etn").value
+                    if(yy%2==0){
+                        alert ( " even ticket")
+                    }
+                    else{
+                        alert ( " odd ticket")
+                    }
+                    
+                         
+                }
+            </script>
+
+
+<hr>
+<h4>Task 22 </h4>
+            <input id="etn" type="number" class="form-control w-50 border-4"  placeholder="Enter Ticket Number"> <br>
+            <!-- <input id="cyrr" class="form-control w-50 border-4"  placeholder=" Check your result"> <br> -->
+            
+ <br>
+              <button onclick="t21()" class="btn btn-danger my-3">
+     Check Result
+            </button>
+
+            <script>
+                function t22(){
+
+                    var yy = document.getElementById("etn").value
+                    if(yy%2==0){
+                        alert ( " even ticket")
+                    }
+                    else{
+                        alert ( " odd ticket")
+                    }
+                    
+                         
+                }
+            </script>
+
+
+
+
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
