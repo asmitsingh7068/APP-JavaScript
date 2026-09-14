@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+<!-- 8. Number Comparison Take two numbers. If the first number is greater than the second, display “First number is greater”; else display “Second number is greater”. -->
+
+    <input type="text" placeholder="first number" id="inp">
+    <input type="text" placeholder="second number" id="secn">
+    <button onclick="demo()">click me</button>
+
+    <script>
+        
+           var a = document.getElementById("inp")
+        var b = document.getElementById("secn")
+
+        function demo() {
+    
+            var v = a.value;
+            var m = b.value;
+
+            if (v>m) {
+                alert("first number is greter ");
+            }
+            else {
+                alert("second number is greter");
+            }
+
+        }
+    </script>
+
+</body>
+</html>

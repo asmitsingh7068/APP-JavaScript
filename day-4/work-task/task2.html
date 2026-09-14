@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+
+<body>
+
+    26. Task Check whether a search box is empty using .length. <br>
+    <input type="text" id="i26" placeholder="enter search">
+    <button onclick="t26()">Click</button>
+    <hr>
+
+    27. Task Compare two text values and display Same or Different. <br>
+    <input type="text" id="i27a" placeholder="enter text">
+    <input type="text" id="i27b" placeholder="enter text">
+    <button onclick="t27()">Click</button>
+    <hr>
+
+    28. Task Compare two numbers and display Same or Different. <br>
+    <input type="text" id="i28a" placeholder="enter number">
+    <input type="text" id="i28b" placeholder="enter number">
+    <button onclick="t28()">Click</button>
+    <hr>
+
+    29. Task Compare two numbers and display which number is greater. <br>
+    <input type="text" id="i29a" placeholder="enter number">
+    <input type="text" id="i29b" placeholder="enter number">
+    <button onclick="t29()">Click</button>
+    <hr>
+
+    30. Task Compare the lengths of two text inputs and display which is longer. <br>
+    <input type="text" id="i30a" placeholder="enter text">
+    <input type="text" id="i30b" placeholder="enter text">
+    <button onclick="t30()">Click</button>
+    <hr>
+
+    31. Task Take a password and confirm password and display Matched or Not Matched. <br>
+    <input type="text" id="i31a" placeholder="enter password">
+    <input type="text" id="i31b" placeholder="confirm password">
+    <button onclick="t31()">Click</button>
+    <hr>
+
+    32. Task Take a username and confirm username and display Matched or Not Matched. <br>
+    <input type="text" id="i32a" placeholder="enter username">
+    <input type="text" id="i32b" placeholder="confirm username">
+    <button onclick="t32()">Click</button>
+    <hr>
+
+    33. Task Check percentage: 50 or more = Eligible, otherwise Not Eligible. <br>
+    <input type="text" id="i33" placeholder="enter percentage">
+    <button onclick="t33()">Click</button>
+    <hr>
+
+    34. Task Check attendance: 75 or more = Exam Eligible, otherwise Not Eligible. <br>
+    <input type="text" id="i34" placeholder="enter attendance">
+    <button onclick="t34()">Click</button>
+    <hr>
+
+    35. Task Check order amount: 500 or more = Free Delivery, otherwise Charges Apply. <br>
+    <input type="text" id="i35" placeholder="enter amount">
+    <button onclick="t35()">Click</button>
+    <hr>
+
+    36. Task Check account balance: 1000 or more = Balance OK, otherwise Low Balance. <br>
+    <input type="text" id="i36" placeholder="enter balance">
+    <button onclick="t36()">Click</button>
+    <hr>
+
+
+    <script>
+
+        //===============t26=====================
+
+        function t26(){
+
+            var a = document.getElementById("i26")
+            var b = a.value
+
+            if(b.length==0){
+                alert("search box is empty")
+            }
+            else{
+                alert("search box is not empty")
+            }
+        }
+
+
+        //===============t27=====================
+
+        function t27(){
+
+            var a = document.getElementById("i27a")
+            var c = document.getElementById("i27b")
+
+            var b = a.value
+            var d = c.value
+
+            if(b==d){
+                alert("Same")
+            }
+            else{
+                alert("Different")
+            }
+        }
+
+
+        //===============t28=====================
+
+        function t28(){
+
+            var a = document.getElementById("i28a")
+            var c = document.getElementById("i28b")
+
+            var b = a.value
+            var d = c.value
+
+            if(b==d){
+                alert("Same")
+            }
+            else{
+                alert("Different")
+            }
+        }
+
+
+        //===============t29=====================
+
+        function t29(){
+
+            var a = document.getElementById("i29a")
+            var c = document.getElementById("i29b")
+
+            var b = a.value
+            var d = c.value
+
+            if(b>d){
+                alert("first number is greater")
+            }
+            else{
+                alert("second number is greater")
+            }
+        }
+
+
+        //===============t30=====================
+
+        function t30(){
+
+            var a = document.getElementById("i30a")
+            var c = document.getElementById("i30b")
+
+            var b = a.value
+            var d = c.value
+
+            if(b.length>d.length){
+                alert("first text is longer")
+            }
+            else{
+                alert("second text is longer")
+            }
+        }
+
+
+        //===============t31=====================
+
+        function t31(){
+
+            var a = document.getElementById("i31a")
+            var c = document.getElementById("i31b")
+
+            var b = a.value
+            var d = c.value
+
+            if(b==d){
+                alert("Matched")
+            }
+            else{
+                alert("Not Matched")
+            }
+        }
+
+
+        //===============t32=====================
+
+        function t32(){
+
+            var a = document.getElementById("i32a")
+            var c = document.getElementById("i32b")
+
+            var b = a.value
+            var d = c.value
+
+            if(b==d){
+                alert("Matched")
+            }
+            else{
+                alert("Not Matched")
+            }
+        }
+
+
+        //===============t33=====================
+
+        function t33(){
+
+            var a = document.getElementById("i33")
+            var b = a.value
+
+            if(b>=50){
+                alert("Eligible")
+            }
+            else{
+                alert("Not Eligible")
+            }
+        }
+
+
+        //===============t34=====================
+
+        function t34(){
+
+            var a = document.getElementById("i34")
+            var b = a.value
+
+            if(b>=75){
+                alert("Exam Eligible")
+            }
+            else{
+                alert("Not Eligible")
+            }
+        }
+
+
+        //===============t35=====================
+
+        function t35(){
+
+            var a = document.getElementById("i35")
+            var b = a.value
+
+            if(b>=500){
+                alert("Free Delivery")
+            }
+            else{
+                alert("Charges Apply")
+            }
+        }
+
+
+        //===============t36=====================
+
+        function t36(){
+
+            var a = document.getElementById("i36")
+            var b = a.value
+
+            if(b>=1000){
+                alert("Balance OK")
+            }
+            else{
+                alert("Low Balance")
+            }
+        }
+
+    </script>
+
+</body>
+</html>

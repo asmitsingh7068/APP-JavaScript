@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+
+    <!-- 2. Positive or Negative Input a number. If the number is greater than 0, display “Positive”; else display “Negative”. -->
+
+    <input type="text" placeholder="enter number" id="inp">
+    <button onclick="demo()">click me</button>
+
+    <script>
+        var a = document.getElementById("inp");
+
+        function demo() {
+
+            var b = a.value;
+
+            if (b > 0) {
+                alert("number is positive");
+            }
+            else {
+                alert("number is negative");
+            }
+
+        }
+    </script>
+
+</body>
+</html>

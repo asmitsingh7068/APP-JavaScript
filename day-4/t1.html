@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+<body>
+
+    <!-- 1. Even or Odd Input a number. If the number is even, display “Even”; else display “Odd”. -->
+
+    <div class="container mx-auto">
+
+        <div class="col-sm-6"></div>
+
+        <input type="text"class="form-control" >
+        <button onclick="demo()" class="btn btn-dark"> check</button>
+      
+    </div>
+
+    <script>
+            var a = document.querySelector("input");
+            var b= a.value;
+
+      function demo(){
+         var b= a.value;
+             if(b%2 ==0){
+                 alert("number is even")
+             }
+            else{
+                   alert("number is odd")
+        }
+    }
+    </script>
+    
+</body>
+</html>

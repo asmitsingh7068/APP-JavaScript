@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+
+<body>
+
+    1. Task Check whether a number is greater than 25. <br>
+    <input type="text" id="i1" placeholder="enter input">
+    <button onclick="t1()">Click</button>
+    <hr>
+
+    2. Task Check whether a number is divisible by 4. <br>
+    <input type="text" id="i2" placeholder="enter input">
+    <button onclick="t2()">Click</button>
+    <hr>
+
+    3. Task Check whether a number is divisible by 6. <br>
+    <input type="text" id="i3" placeholder="enter input">
+    <button onclick="t3()">Click</button>
+    <hr>
+
+    4. Task Check whether a number is zero or not. <br>
+    <input type="text" id="i4" placeholder="enter input">
+    <button onclick="t4()">Click</button>
+    <hr>
+
+    5. Task Check whether a number is positive or not. <br>
+    <input type="text" id="i5" placeholder="enter input">
+    <button onclick="t5()">Click</button>
+    <hr>
+
+    6. Task Check whether marks are 33 or more. <br>
+    <input type="text" id="i6" placeholder="enter marks">
+    <button onclick="t6()">Click</button>
+    <hr>
+
+    7. Task Check whether marks are 60 or more. <br>
+    <input type="text" id="i7" placeholder="enter marks">
+    <button onclick="t7()">Click</button>
+    <hr>
+
+    8. Task Check whether age is 18 or more. <br>
+    <input type="text" id="i8" placeholder="enter age">
+    <button onclick="t8()">Click</button>
+    <hr>
+
+    9. Task Check whether age is 21 or more. <br>
+    <input type="text" id="i9" placeholder="enter age">
+    <button onclick="t9()">Click</button>
+    <hr>
+
+    10. Task Check whether temperature is above 30. <br>
+    <input type="text" id="i10" placeholder="enter temperature">
+    <button onclick="t10()">Click</button>
+    <hr>
+
+    11. Task Check whether speed is above 50. <br>
+    <input type="text" id="i11" placeholder="enter speed">
+    <button onclick="t11()">Click</button>
+    <hr>
+
+    12. Task Check whether salary is 25000 or more. <br>
+    <input type="text" id="i12" placeholder="enter salary">
+    <button onclick="t12()">Click</button>
+    <hr>
+
+    13. Task Check whether balance is 1000 or more. <br>
+    <input type="text" id="i13" placeholder="enter balance">
+    <button onclick="t13()">Click</button>
+    <hr>
+
+    14. Task Check whether quantity is greater than 0. <br>
+    <input type="text" id="i14" placeholder="enter quantity">
+    <button onclick="t14()">Click</button>
+    <hr>
+
+    15. Task Check whether price is 500 or less. <br>
+    <input type="text" id="i15" placeholder="enter price">
+    <button onclick="t15()">Click</button>
+    <hr>
+
+    16. Task Check whether amount is 2000 or more. <br>
+    <input type="text" id="i16" placeholder="enter amount">
+    <button onclick="t16()">Click</button>
+    <hr>
+
+    17. Task TECHPILE Check whether a name has been entered using .length. <br>
+    <input type="text" id="i17" placeholder="enter name">
+    <button onclick="t17()">Click</button>
+    <hr>
+
+    18. Task Check whether a name has 5 or more characters. <br>
+    <input type="text" id="i18" placeholder="enter name">
+    <button onclick="t18()">Click</button>
+    <hr>
+
+    19. Task Check whether a message has 20 or more characters. <br>
+    <input type="text" id="i19" placeholder="enter message">
+    <button onclick="t19()">Click</button>
+    <hr>
+
+    20. Task Check whether a password has 8 or more characters. <br>
+    <input type="text" id="i20" placeholder="enter password">
+    <button onclick="t20()">Click</button>
+    <hr>
+
+    21. Task Check whether a PIN has exactly 4 characters. <br>
+    <input type="text" id="i21" placeholder="enter PIN">
+    <button onclick="t21()">Click</button>
+    <hr>
+
+    22. Task Check whether a mobile number has exactly 10 characters. <br>
+    <input type="text" id="i22" placeholder="enter mobile number">
+    <button onclick="t22()">Click</button>
+    <hr>
+
+    23. Task Check whether a student ID has exactly 6 characters. <br>
+    <input type="text" id="i23" placeholder="enter student ID">
+    <button onclick="t23()">Click</button>
+    <hr>
+
+    24. Task Check whether a coupon code has exactly 5 characters. <br>
+    <input type="text" id="i24" placeholder="enter coupon code">
+    <button onclick="t24()">Click</button>
+    <hr>
+
+    25. Task Check whether a city name has 4 or more characters. <br>
+    <input type="text" id="i25" placeholder="enter city">
+    <button onclick="t25()">Click</button>
+    <hr>
+
+
+    <script>
+
+        //===============t1=======================
+
+        var a = document.getElementById("i1")
+
+        function t1(){
+            var b = a.value
+
+            if(b>25){
+                alert("number is greater than 25")
+            }
+            else{
+                alert("number is less than or equal to 25")
+            }
+        }
+
+
+        //===============t2=======================
+
+        var a = document.getElementById("i2")
+
+        function t2(){
+            var b = a.value
+            var x = b%4
+
+            if(x==0){
+                alert("divisible by 4")
+            }
+            else{
+                alert("not divisible by 4")
+            }
+        }
+
+
+        //===============t3=======================
+
+        var a = document.getElementById("i3")
+
+        function t3(){
+            var b = a.value
+            var x = b%6
+
+            if(x==0){
+                alert("divisible by 6")
+            }
+            else{
+                alert("not divisible by 6")
+            }
+        }
+
+
+        //===============t4=======================
+
+        var a = document.getElementById("i4")
+
+        function t4(){
+            var b = a.value
+
+            if(b==0){
+                alert("number is 0")
+            }
+            else{
+                alert("number is not 0")
+            }
+        }
+
+
+        //===============t5=======================
+
+        var a = document.getElementById("i5")
+
+        function t5(){
+            var b = a.value
+
+            if(b>0){
+                alert("number is positive")
+            }
+            else{
+                alert("number is not positive")
+            }
+        }
+
+
+        //===============t6=======================
+
+        var a = document.getElementById("i6")
+
+        function t6(){
+            var b = a.value
+
+            if(b>=33){
+                alert("marks are 33 or more")
+            }
+            else{
+                alert("marks are less than 33")
+            }
+        }
+
+
+        //===============t7=======================
+
+        var a = document.getElementById("i7")
+
+        function t7(){
+            var b = a.value
+
+            if(b>=60){
+                alert("marks are 60 or more")
+            }
+            else{
+                alert("marks are less than 60")
+            }
+        }
+
+
+        //===============t8=======================
+
+        var a = document.getElementById("i8")
+
+        function t8(){
+            var b = a.value
+
+            if(b>=18){
+                alert("age is 18 or more")
+            }
+            else{
+                alert("age is less than 18")
+            }
+        }
+
+
+        //===============t9=======================
+
+        var a = document.getElementById("i9")
+
+        function t9(){
+            var b = a.value
+
+            if(b>=21){
+                alert("age is 21 or more")
+            }
+            else{
+                alert("age is less than 21")
+            }
+        }
+
+
+        //===============t10=======================
+
+        var a = document.getElementById("i10")
+
+        function t10(){
+            var b = a.value
+
+            if(b>30){
+                alert("temperature is above 30")
+            }
+            else{
+                alert("temperature is not above 30")
+            }
+        }
+
+
+        //===============t11=======================
+
+        var a = document.getElementById("i11")
+
+        function t11(){
+            var b = a.value
+
+            if(b>50){
+                alert("speed is above 50")
+            }
+            else{
+                alert("speed is not above 50")
+            }
+        }
+
+
+        //===============t12=======================
+
+        var a = document.getElementById("i12")
+
+        function t12(){
+            var b = a.value
+
+            if(b>=25000){
+                alert("salary is 25000 or more")
+            }
+            else{
+                alert("salary is less than 25000")
+            }
+        }
+
+
+        //===============t13=======================
+
+        var a = document.getElementById("i13")
+
+        function t13(){
+            var b = a.value
+
+            if(b>=1000){
+                alert("balance is 1000 or more")
+            }
+            else{
+                alert("balance is less than 1000")
+            }
+        }
+
+
+        //===============t14=======================
+
+        var a = document.getElementById("i14")
+
+        function t14(){
+            var b = a.value
+
+            if(b>0){
+                alert("quantity is greater than 0")
+            }
+            else{
+                alert("quantity is not greater than 0")
+            }
+        }
+
+
+        //===============t15=======================
+
+        var a = document.getElementById("i15")
+
+        function t15(){
+            var b = a.value
+
+            if(b<=500){
+                alert("price is 500 or less")
+            }
+            else{
+                alert("price is greater than 500")
+            }
+        }
+
+
+        //===============t16=======================
+
+        var a = document.getElementById("i16")
+
+        function t16(){
+            var b = a.value
+
+            if(b>=2000){
+                alert("amount is 2000 or more")
+            }
+            else{
+                alert("amount is less than 2000")
+            }
+        }
+
+
+        //===============t17=======================
+
+        var a = document.getElementById("i17")
+
+        function t17(){
+            var b = a.value
+
+            if(b.length>0){
+                alert("name has been entered")
+            }
+            else{
+                alert("name has not been entered")
+            }
+        }
+
+
+        //===============t18=======================
+
+        var a = document.getElementById("i18")
+
+        function t18(){
+            var b = a.value
+
+            if(b.length>=5){
+                alert("name has 5 or more characters")
+            }
+            else{
+                alert("name has less than 5 characters")
+            }
+        }
+
+
+        //===============t19=======================
+
+        var a = document.getElementById("i19")
+
+        function t19(){
+            var b = a.value
+
+            if(b.length>=20){
+                alert("message has 20 or more characters")
+            }
+            else{
+                alert("message has less than 20 characters")
+            }
+        }
+
+
+        //===============t20=======================
+
+        var a = document.getElementById("i20")
+
+        function t20(){
+            var b = a.value
+
+            if(b.length>=8){
+                alert("password has 8 or more characters")
+            }
+            else{
+                alert("password has less than 8 characters")
+            }
+        }
+
+
+        //===============t21=======================
+
+        var a = document.getElementById("i21")
+
+        function t21(){
+            var b = a.value
+
+            if(b.length==4){
+                alert("PIN has exactly 4 characters")
+            }
+            else{
+                alert("PIN does not have exactly 4 characters")
+            }
+        }
+
+
+        //===============t22=======================
+
+        var a = document.getElementById("i22")
+
+        function t22(){
+            var b = a.value
+
+            if(b.length==10){
+                alert("mobile number has exactly 10 characters")
+            }
+            else{
+                alert("mobile number does not have exactly 10 characters")
+            }
+        }
+
+
+        //===============t23=======================
+
+        var a = document.getElementById("i23")
+
+        function t23(){
+            var b = a.value
+
+            if(b.length==6){
+                alert("student ID has exactly 6 characters")
+            }
+            else{
+                alert("student ID does not have exactly 6 characters")
+            }
+        }
+
+
+        //===============t24=======================
+
+        var a = document.getElementById("i24")
+
+        function t24(){
+            var b = a.value
+
+            if(b.length==5){
+                alert("coupon code has exactly 5 characters")
+            }
+            else{
+                alert("coupon code does not have exactly 5 characters")
+            }
+        }
+
+
+        //===============t25=======================
+
+        var a = document.getElementById("i25")
+
+        function t25(){
+            var b = a.value
+
+            if(b.length>=4){
+                alert("city name has 4 or more characters")
+            }
+            else{
+                alert("city name has less than 4 characters")
+            }
+        }
+
+    </script>
+
+</body>
+</html>

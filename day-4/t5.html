@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+<!-- 5. Login Check Input a username. If username length is 5 or more, display “Valid Username”; else display “Invalid Username”. -->
+
+    <input type="text" placeholder="enter user name" id="inp">
+    <button onclick="demo()">click me</button>
+
+    <script>
+        
+        var a = document.getElementById("inp")
+
+        function demo() {
+
+           
+            var v = a.value.length;
+            if (v > 5) {
+                alert("Valid usrename ");
+            }
+            else {
+                alert("invalid user name");
+            }
+
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+
+<body>
+
+    45. Task Take a student name and set a welcome message using its .value if it is not empty; otherwise set Name Required. <br>
+    <input type="text" id="i45" placeholder="enter student name">
+    <button onclick="t45()">Click</button>
+    <p id="r45"></p>
+    <hr>
+
+
+    46. Task Take two text inputs and use their .length values to display Equal Length or Different Length. <br>
+    <input type="text" id="i46a" placeholder="enter text">
+    <input type="text" id="i46b" placeholder="enter text">
+    <button onclick="t46()">Click</button>
+    <p id="r46"></p>
+    <hr>
+
+
+    47. Task Take two numbers and set the result element using .innerText based on which is greater. <br>
+    <input type="text" id="i47a" placeholder="enter number">
+    <input type="text" id="i47b" placeholder="enter number">
+    <button onclick="t47()">Click</button>
+    <p id="r47"></p>
+    <hr>
+
+
+    48. Task Take a shopping amount and set a discount message using .innerText. <br>
+    <input type="text" id="i48" placeholder="enter shopping amount">
+    <button onclick="t48()">Click</button>
+    <p id="r48"></p>
+    <hr>
+
+
+    49. Task Take attendance and set an eligibility message using .innerText. <br>
+    <input type="text" id="i49" placeholder="enter attendance">
+    <button onclick="t49()">Click</button>
+    <p id="r49"></p>
+    <hr>
+
+
+    50. Task Create a simple student form with name, course and mobile inputs. Use separate if/else checks for each field and set the result with .innerText. Do not combine conditions. <br>
+
+    <input type="text" id="i50a" placeholder="enter name">
+    <input type="text" id="i50b" placeholder="enter course">
+    <input type="text" id="i50c" placeholder="enter mobile">
+
+    <button onclick="t50()">Submit</button>
+
+    <p id="r50a"></p>
+    <p id="r50b"></p>
+    <p id="r50c"></p>
+
+    <hr>
+
+
+    <script>
+
+        //===============t45=======================
+
+        function t45(){
+
+            var a = document.getElementById("i45")
+            var b = a.value
+
+            var c = document.getElementById("r45")
+
+            if(b.length>0){
+                c.innerText = "Welcome " + b
+            }
+            else{
+                c.innerText = "Name Required"
+            }
+        }
+
+
+        //===============t46=======================
+
+        function t46(){
+
+            var a = document.getElementById("i46a")
+            var c = document.getElementById("i46b")
+
+            var b = a.value
+            var d = c.value
+
+            var x = document.getElementById("r46")
+
+            if(b.length==d.length){
+                x.innerText = "Equal Length"
+            }
+            else{
+                x.innerText = "Different Length"
+            }
+        }
+
+
+        //===============t47=======================
+
+        function t47(){
+
+            var a = document.getElementById("i47a")
+            var c = document.getElementById("i47b")
+
+            var b = a.value
+            var d = c.value
+
+            var x = document.getElementById("r47")
+
+            if(b>d){
+                x.innerText = "First number is greater"
+            }
+            else{
+                x.innerText = "Second number is greater"
+            }
+        }
+
+
+        //===============t48=======================
+
+        function t48(){
+
+            var a = document.getElementById("i48")
+            var b = a.value
+
+            var c = document.getElementById("r48")
+
+            if(b>=2000){
+                c.innerText = "You get 20% discount"
+            }
+            else{
+                c.innerText = "You get 5% discount"
+            }
+        }
+
+
+        //===============t49=======================
+
+        function t49(){
+
+            var a = document.getElementById("i49")
+            var b = a.value
+
+            var c = document.getElementById("r49")
+
+            if(b>=75){
+                c.innerText = "Exam Eligible"
+            }
+            else{
+                c.innerText = "Not Eligible"
+            }
+        }
+
+
+        //===============t50=======================
+
+        function t50(){
+
+            var a = document.getElementById("i50a")
+            var b = a.value
+
+            var c = document.getElementById("r50a")
+
+            if(b.length>0){
+                c.innerText = "Name: " + b
+            }
+            else{
+                c.innerText = "Name Required"
+            }
+
+
+            var d = document.getElementById("i50b")
+            var e = d.value
+
+            var f = document.getElementById("r50b")
+
+            if(e.length>0){
+                f.innerText = "Course: " + e
+            }
+            else{
+                f.innerText = "Course Required"
+            }
+
+
+            var g = document.getElementById("i50c")
+            var h = g.value
+
+            var i = document.getElementById("r50c")
+
+            if(h.length>0){
+                i.innerText = "Mobile: " + h
+            }
+            else{
+                i.innerText = "Mobile Required"
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

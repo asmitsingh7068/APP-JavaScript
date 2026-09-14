@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+<!-- 6. Password Check Input a password. If password length is 8 or more, display “Strong Password”; else display “Weak Password”. -->
+
+    <input type="text" placeholder="enter password" id="inp">
+    <button onclick="demo()">click me</button>
+
+    <script>
+        
+        var a = document.getElementById("inp")
+
+        function demo() {
+
+           
+            var v = a.value.length;
+            if (v >= 8) {
+                alert("Storng Password ");
+            }
+            else {
+                alert("Week password");
+            }
+
+        }
+    </script>
+
+</body>
+</html>

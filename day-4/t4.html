@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+
+  <!-- 4. Pass or Fail Input marks. If marks are 40 or above, display “Pass”; else display “Fail”. -->
+
+    <input type="text" placeholder="enter marks" id="inp">
+    <button onclick="demo()">click me</button>
+
+    <script>
+        var a = document.getElementById("inp");
+
+        function demo() {
+
+            var b = a.value;
+
+            if (b > 40) {
+                alert("you are pass");
+            }
+            else {
+                alert("you are fail");
+            }
+
+        }
+    </script>
+
+</body>
+</html>

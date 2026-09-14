@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+<!-- 7. Voting Eligibility Input age. If age is 18 or above, display “You can vote”; else display “You cannot vote”. -->
+
+    <input type="text" placeholder="enter age" id="inp">
+    <button onclick="demo()">click me</button>
+
+    <script>
+        
+        var a = document.getElementById("inp")
+
+        function demo() {
+
+           
+            var v = a.value;
+            if (v > 18) {
+                alert("you can vote ");
+            }
+            else {
+                alert("you cant vote");
+            }
+
+        }
+    </script>
+
+</body>
+</html>

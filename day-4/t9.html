@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+<!-- 9. Name Length Input a name. If name length is 3 or more, display “Valid Name”; else display “Name is too short”. -->
+
+    <input type="text" placeholder="first number" id="inp">
+    
+    <button onclick="demo()">click me</button>
+
+    <script>
+        
+        var a = document.getElementById("inp")
+  
+
+        function demo() {
+
+           
+            var v = a.value.length;
+    
+
+            if (v>3) {
+                alert("valid name ");
+            }
+            else {
+                alert("invalid name");
+            }
+
+        }
+    </script>
+
+</body>
+</html>
