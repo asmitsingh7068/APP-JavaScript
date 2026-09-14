@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+</head>
+<body>
+    <p></p>
+    <button onclick="demo()"> Click me</button>
+        <script>
+            var arr = ["html","CSS","JS","jQuery"]
+
+            var demo=()=>{
+
+                var p = document.querySelector("p")
+                var res=""
+
+                for(var data of arr){
+
+                    res+=data+"<br/>"
+                }
+
+                p.innerHTML=res
+            }
+        </script>
+</body>
+</html>

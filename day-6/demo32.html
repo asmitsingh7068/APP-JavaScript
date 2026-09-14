@@ -1,0 +1,32 @@
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+            <input type="text">
+            <button onclick="demo()">CLICK ME</button>
+            <p id="x"> </p>
+
+    <script>
+     var demo =()=>
+     {
+
+        var str = document.querySelector("input").value
+        var p = document.querySelector("p")
+        
+        for (var i in str){
+
+            p.innerHTML += `
+            ${str[i]} present at : ${i} <br/>
+            
+            `
+        }
+     }
+
+
+    </script>
+</body>
+</html>
