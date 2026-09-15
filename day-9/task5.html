@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+
+    </head>
+
+    <body>
+        <button onclick="demo()">Click me </button>
+        
+        <script>
+
+            function demo(){
+
+                var name = prompt("Enter name");
+var email = prompt("Enter email");
+var id = prompt("Enter student ID");
+var course = prompt("Enter course");
+
+name = name.trim().toUpperCase();
+
+email = email.trim().toLowerCase();
+
+var firstName = name.split(" ")[0];
+
+var isStudent = id.startsWith("STU");
+
+var courseAvailable = course.includes("JavaScript");
+
+var message = `Welcome ${firstName}!
+Email: ${email}
+Student ID: ${id}
+Valid Student ID: ${isStudent}
+Course Available: ${courseAvailable}`;
+
+alert(message);
+            }
+        </script>
+    </body>
+</html>
