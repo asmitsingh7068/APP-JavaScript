@@ -58,3 +58,73 @@
 // console.log(text.length);
 // let res = text.trim();
 // console.log(res.length);
+
+//startsWith()
+// let a = "javascript is powerfull"
+// let res = a.startsWith("Java");
+// console.log(res);
+
+//endsWith()
+// let a = "techpile technology"
+// let res = a.endsWith("LOGY");  // case sesetive
+// console.log(res); 
+
+//search()
+// let text = "Hellow JavaScript";
+// let res = text.search("lavaScript");
+// console.log(res); // mila to true ni to -1
+
+
+//indexOf() lr side se
+// let text = "Hellow JavaScript";
+// let res = text.search("JavaScript");
+// console.log(res); // mila to index value  ni to -1 
+
+
+//lastIndexOf() rl side se
+// let text = "Hellow JavaScript and i love coding and i am asmit ";
+// let res = text.lastIndexOf("z");
+// console.log(res); // mila to index value  ni to -1 
+
+//charAt()
+// let text = "Hellow JavaScript and i love coding and i am asmit ";
+// let res = text.charAt(4); //
+// console.log(res); // mila to index value  ni to -1 
+
+//fromCharCode()
+
+// let res = String.fromCharCode(97); //
+// console.log(res); 
+
+
+// concate()
+// let str = "hi";
+// let str1 = "java";
+// let res = str.concat("  ",str1);
+// console.log(res);
+
+//repeat()
+// let str = "hi..";
+// console.log(str.repeat(9));
+
+
+//substr()
+// let text = "JAvaScript";
+// console.log(text.substr(4,6));
+
+
+//subString()
+// let text = "JAvaScript";
+// console.log(text.substr(4,6));
+
+// //toString
+// let a = 7068491349;
+// let b = "7068491349";
+// console.log(typeof a.toString());
+// console.log(typeof b.toString());
+
+//trimStart()  and  trimEnd()
+// let a = "    this is the hello    ";
+// console.log(a.trimStart());
+// console.log(a.trimEnd());
+
